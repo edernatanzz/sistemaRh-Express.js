@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+            min-height: 100vh;
+        }
+        header {
+            width: 100%;
+            background-color: #333;
+            color: white;
+        }
+        .classheader {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+            padding: 0 20px;
+        }
+        .classheader a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .classheader a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .actions a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .actions a:hover {
+            text-decoration: underline;
+        }
+        .icon-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            color: #007bff;
+        }
+        .icon-button:hover {
+            color: #0056b3;
+        }
+        .icon-button.delete {
+            color: #dc3545;
+        }
+        .icon-button.delete:hover {
+            color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="classheader">
+            <a href="/" aria-label="Página inicial">Cadastro</a>
+            <a href="/colaboradores.html" aria-label="Página de colaboradores">Colaboradores</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Lista de Usuários</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                    <th>Data de Nascimento</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>João Silva</td>
+                    <td>joao.silva@example.com</td>
+                    <td>(11) 98765-4321</td>
+                    <td>Rua A, 123</td>
+                    <td>1990-05-15</td>
+                    <td>
+                        <button class="icon-button"><i class="fas fa-edit" aria-label="Editar"></i></button>
+                        <button class="icon-button delete"><i class="fas fa-trash" aria-label="Excluir"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Oliveira</td>
+                    <td>maria.oliveira@example.com</td>
+                    <td>(21) 99876-5432</td>
+                    <td>Rua B, 456</td>
+                    <td>1985-11-22</td>
+                    <td>
+                        <button class="icon-button"><i class="fas fa-edit" aria-label="Editar"></i></button>
+                        <button class="icon-button delete"><i class="fas fa-trash" aria-label="Excluir"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pedro Santos</td>
+                    <td>pedro.santos@example.com</td>
+                    <td>(31) 91234-5678</td>
+                    <td>Rua C, 789</td>
+                    <td>1992-07-30</td>
+                    <td>
+                        <button class="icon-button"><i class="fas fa-edit" aria-label="Editar"></i></button>
+                        <button class="icon-button delete"><i class="fas fa-trash" aria-label="Excluir"></i></button>
+                    </td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+        <div class="actions">
+            <a href="index.html">Cadastrar Novo Usuário</a>
+        </div>
+    </div>
+</body>
+</html>

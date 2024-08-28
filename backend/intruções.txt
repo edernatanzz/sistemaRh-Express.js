@@ -1,0 +1,2 @@
+npm install 
+executar o servidor : npm run dev
