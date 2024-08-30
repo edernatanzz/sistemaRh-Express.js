@@ -3,7 +3,7 @@ intruções :
 -entrar na pasta backend do projeto 
 
 
--npm install para instalar as pastas do node
+-npm install para instalar as dependencias do node
 
 
 -npm run dev para executar o backend
