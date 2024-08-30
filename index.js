@@ -19,7 +19,7 @@ async function postUser(user) {
             body: JSON.stringify(user)
         });
         if (!res.ok) { // Verifica se a resposta foi bem-sucedida
-            console.log('não foi possivel concluir a operação');
+            console.log('formulario enviado');
             return;
         }
         const data = await res.json();

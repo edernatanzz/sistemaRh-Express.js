@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    min-height: 100vh;
+}
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+.classheader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+.classheader a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.classheader a:hover {
+    text-decoration: underline;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f4f4f4;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+.actions a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+.actions a:hover {
+    text-decoration: underline;
+}
+.icon-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #007bff;
+}
+.icon-button:hover {
+    color: #0056b3;
+}
+.icon-button.delete {
+    color: #dc3545;
+}
+.icon-button.delete:hover {
+    color: #c82333;
+}
+
+
+
+
+
+/*css forms */ 
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #4cae4c;
+}
+#responseMessage {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    text-align: center;
+    display: flex;
+}
+#responseMessage.error {
+    background-color: #f2dede;
+    color: #a94442;
+}
